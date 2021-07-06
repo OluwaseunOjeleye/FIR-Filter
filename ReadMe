@@ -1,0 +1,15 @@
+Compile Using: make clean && make
+
+Run Program Using: ./main [audio_path] [filter_type] [Fc] [filter_length] [window_type]
+				where, 
+					audio_path 		= wav file path
+					filter_type 	= "-lowpass" or "-highpass"
+					Fc				= Cut-Off Frequency
+					filter_length	= length of filter
+					window_type		= "-rectangular", "-hamming", "-hanning", or "-blackman"
+
+
+For example, ./main wavfiles/NubiaCantaDalva.wav -lowpass 3000 512 -hamming
+			./main wavfiles/Test0.wav -lowpass 1000 21 -rectangular
+			
+Output saved as output.wav
