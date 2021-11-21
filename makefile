@@ -1,7 +1,7 @@
 CC = gcc
 
-HEADER = wav.h 
-SRCS= FIR.c
+HEADER = src/wav.h 
+SRCS= src/FIR.c
 
 OBJS = $(SRCS:.c=.o)
 
